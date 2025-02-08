@@ -54,3 +54,92 @@ inp.onkeyup = function(){
 
 use alerts sa taas
 sa baba pag may getelement
+
+
+Feb 8
+
+h1# sa id
+h1. sa class
+
+
+OVERWRITE
+
+<h1 id = "header1"></h1>
+    <h1 class="headerGroup"></h1>
+    <h1 ></h1>
+    <h1 class="headerGroup"></h1> 
+
+    <body>
+    <h1 id = "header1">HEY</h1>
+    <h1 id = "header2"></h1>
+
+<script>
+
+    var head1 = document.getElementById("header1");
+    head1.innerText = "Hello World";
+    head1.style.color = "blue";
+</script>
+
+
+ON AND OFF HOVER
+
+<script>
+
+    var head1 = document.getElementById("header1");
+    head1.onmouseover = function(){
+        head1.style.color = "red";
+    }
+
+    head1.onmouseleave = function(){
+        head1.style.color = "black";
+    }
+
+</script>
+
+WITH ALERT
+
+<body>
+    <h1 id = "header1">HEY</h1>
+    <h1 id = "header2"></h1>
+
+<script>
+
+    var head1 = document.getElementById("header1");
+    head1.onmouseover = function(){
+        head1.style.color = "red";
+        head1.style.cursor = "pointer";
+
+    }
+
+    head1.onmouseleave = function(){
+        head1.style.color = "black";
+    }
+
+    head1.onclick = function(){
+        alert("hoyyyyyyyyyyyyy");
+    }
+
+</script>
+
+
+var x; (PWEDE KAHIT ANONG DATA TYPE)
+
+var 99spagetti; (BAWAL NUMBER UNA)
+var asdasd$asd; (DAPAT ALPHANUMERIC AFTER NG FIRST)
+
+
+var x = 10;
+        var y = 5;
+        var result = x + y;
+
+        console.log(result);
+
+
+var x = 10;
+        var y = 5;
+        y = x += y;
+        alert(y)
+
+5 and "5" are the Same
+
+js variable lifetime ends after closing the tab OR cache is cleared
